@@ -1,8 +1,8 @@
-from airflow import DAG
-from airflow.providers.http.operators.http import HttpOperator
 from airflow.decorators import task
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow.utils.timezone import datetime
+from airflow import DAG
+from airflow.providers.http.operators.http import HttpOperator
 
 # DAG definition
 with DAG(
